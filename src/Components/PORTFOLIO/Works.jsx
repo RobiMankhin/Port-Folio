@@ -19,7 +19,7 @@ const Works = () => {
         loop={true}
         navigation={true}
         // autoplay={{ delay: 4000 }}
-        className=" mt-4 shadow-2xl border duration-300 hover:scale-105 border-y-gray-400 rounded-md h-[350px] md:h-[450px] lg:h-[475px] w-[340px] md:w-[700px] lg:w-[800px]  "
+        className=" mt-4 shadow-2xl border duration-300 hover:scale-105 border-y-gray-400 rounded-md h-[350px] md:h-[480px] lg:h-[500px] w-[340px] md:w-[700px] lg:w-[800px]  "
       >
         {Projects?.map((item) => (
           <SwiperSlide
