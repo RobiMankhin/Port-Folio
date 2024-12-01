@@ -10,6 +10,11 @@ import { Element } from "react-scroll";
 function App() {
   const [activeLink, setActiveLink] = useState("header");
   const [nav, setNav] = useState(false);
+  const [isDark, setIsDark] = useState(false);
+  const toggleDarkMode = () => {
+    setIsDark((prev) => !prev);
+    document.documentElement.classList.toggle("dark", !isDark);
+  };
 
   const handleNav = () => {
     setNav(!nav);
@@ -21,13 +26,21 @@ function App() {
   };
 
   return (
-    <>
+    <div
+      className={`mt-0 transition-all duration-300 ${
+        isDark
+          ? "bg-darkBackground text-darkText"
+          : "bg-lightBackground text-lightText"
+      }`}
+    >
       <Element name="header">
         <Header
           activeLink={activeLink}
           handleClick={handleClick}
           handleNav={handleNav}
           nav={nav}
+          toggleDarkMode={toggleDarkMode}
+          isDark={isDark}
         />
       </Element>
 
@@ -44,7 +57,7 @@ function App() {
       </Element>
 
       <Footer handleClick={handleClick} />
-    </>
+    </div>
   );
 }
 

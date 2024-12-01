@@ -6,11 +6,11 @@ import PropTypes from "prop-types";
 
 const Footer = ({ handleClick }) => {
   return (
-    <div className="flex flex-col items-center bg-slate-200 py-4 h-[160px] mt-16">
+    <div className="flex flex-col items-center bg-slate-200 py-4 h-[160px] mt-16 dark:bg-gray-700 ">
       <h1 className="font-bold text-3xl">Robi</h1>
       <div className="flex gap-8 mt-4 font-semibold text-sm">
         <Link
-          className="hover:text-gray-700  cursor-pointer"
+          className="hover:text-gray-700 dark:text-darkText dark:hover:text-slate-400 cursor-pointer"
           to="header"
           smooth={true}
           duration={500}
@@ -21,7 +21,7 @@ const Footer = ({ handleClick }) => {
           Top
         </Link>
         <Link
-          className="hover:text-gray-700  cursor-pointer"
+          className="hover:text-gray-700 dark:text-darkText dark:hover:text-slate-400 cursor-pointer"
           to="about"
           smooth={true}
           duration={500}
@@ -32,7 +32,7 @@ const Footer = ({ handleClick }) => {
           About
         </Link>
         <Link
-          className="hover:text-gray-700  cursor-pointer"
+          className="hover:text-gray-700 dark:text-darkText dark:hover:text-slate-400 cursor-pointer"
           to="portfolio"
           smooth={true}
           duration={500}
@@ -45,7 +45,7 @@ const Footer = ({ handleClick }) => {
       </div>
 
       <div className="flex justify-center md:justify-start mt-4 rounded-full gap-4">
-        <button className="rounded-full text-xl hover:bg-gray-100 shadow-gray-300 p-1  shadow-lg hover:scale-110 duration-300">
+        <button className="dark:text-darkText dark:hover:bg-darkBackground rounded-full text-xl hover:bg-gray-100 shadow-gray-300 p-1  shadow-lg hover:scale-110 duration-300">
           <a
             href="https://www.facebook.com/robi.leo.47"
             target="_blank"
@@ -54,7 +54,7 @@ const Footer = ({ handleClick }) => {
             <FaFacebookSquare />
           </a>
         </button>
-        <button className="rounded-full text-2xl hover:bg-gray-100 shadow-gray-300 p-1  shadow-lg hover:scale-110 duration-300">
+        <button className="dark:text-darkText dark:hover:bg-darkBackground rounded-full text-2xl hover:bg-gray-100 shadow-gray-300 p-1  shadow-lg hover:scale-110 duration-300">
           <a
             href="https://www.linkedin.com/in/robi-mankhin-608b7b271/"
             target="_blank"
@@ -63,7 +63,7 @@ const Footer = ({ handleClick }) => {
             <TiSocialLinkedinCircular />
           </a>
         </button>
-        <button className=" rounded-full text-2xl hover:bg-gray-100 shadow-gray-300 p-1  shadow-lg hover:scale-110 duration-300">
+        <button className="dark:text-darkText dark:hover:bg-darkBackground  rounded-full text-2xl hover:bg-gray-100 shadow-gray-300 p-1  shadow-lg hover:scale-110 duration-300">
           <a
             href="https://x.com/Robi_Mankhin49"
             target="_blank"

@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class", // Enables class-based dark mode
   theme: {
     extend: {
       keyframes: {
@@ -25,9 +26,18 @@ export default {
         },
       },
       animation: {
+        profile: "profile_animate 7s ease-in-out infinite 1s",
         "up-down-hover": "up-down 1s ease-in-out infinite",
         spin: "spin 2.5s linear infinite",
-        profile: "profile_animate 7s ease-in-out infinite 1s",
+        fade: "fade_in 1.5s ease-in forwards",
+        scale: "scale_up 0.3s ease-in-out",
+      },
+      colors: {
+        // Custom Colors
+        darkBackground: "#1E293B", // Dark mode background
+        darkText: "#CBD5E1", // Light text for dark mode
+        lightBackground: "#F8FAFC", // Light mode background
+        lightText: "#1E293B", // Dark text for light mode
       },
     },
   },

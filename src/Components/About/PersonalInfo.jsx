@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 
 const PersonalInfo = ({ setTopup }) => {
   return (
-    <div className="fixed z-20 flex overflow-scroll items-center justify-center bg-slate-200 bg-opacity-95 top-0 bottom-0 right-0 left-0">
-      <div className="flex p-2 mt-8 relative w-[340px] md:w-[550px] rounded-md border-gray-400 border ">
+    <div className="fixed dark:text-gray-700 dark:bg-darkBackground z-20 flex overflow-scroll items-center justify-center bg-slate-200 bg-opacity-95 top-0 bottom-0 right-0 left-0">
+      <div className="flex dark:bg-gray-300 p-2 mt-8 relative w-[340px] md:w-[550px] rounded-md border-gray-400 border ">
         <div className=" flex  flex-col  ">
           <div className="flex flex-col items-center ">
             <h2 className="text-xl my-2 font-semibold">Education</h2>

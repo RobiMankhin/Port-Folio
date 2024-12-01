@@ -31,14 +31,16 @@ const Message = () => {
 
   return (
     <div className="flex items-center  flex-col text-gray-800">
-      <h3 className="mb-5 font-semibold">Send me your ideas</h3>
+      <h3 className="mb-5 dark:text-darkText font-semibold">
+        Send me your ideas
+      </h3>
       <Formik
         validationSchema={validationSchema}
         onSubmit={HandleSubmit}
         initialValues={{ name: "", email: "", message: "" }}
       >
         {() => (
-          <Form className="flex flex-col gap-4 w-[280px] bg-amber-50 shadow-md p-4 rounded-lg">
+          <Form className="flex flex-col gap-4  bg-amber-50 shadow-md p-8 rounded-lg">
             <div className="relative">
               <label
                 htmlFor="name"

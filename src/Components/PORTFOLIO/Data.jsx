@@ -1,8 +1,9 @@
 import work1 from "../../assets/khawadawa.png";
-import work2 from "../../assets/weatherapp.png";
+import work2 from "../../assets/FootGear-Hub.png";
 import work3 from "../../assets/diceGame.png";
-import work4 from "../../assets/work4.jpg";
-import work5 from "../../assets/work5.jpg";
+import work4 from "../../assets/weatherapp.png";
+import work5 from "../../assets/notebook1.png";
+
 export const Projects = [
   {
     id: 1,
@@ -14,9 +15,9 @@ export const Projects = [
   {
     id: 2,
     Image: work2,
-    title: "weather",
-    link: "https://climescanner.netlify.app/",
-    git: "https://github.com/RobiMankhin/Clime-Scanner",
+    title: "FoodGear-Hub",
+    link: "https://footgear-hub.netlify.app/",
+    git: "https://github.com/RobiMankhin/FootGear-Hub",
   },
   {
     id: 3,
@@ -28,15 +29,15 @@ export const Projects = [
   {
     id: 4,
     Image: work4,
-    title: "crud",
-    link: "https://fortune-roll.netlify.app/",
-    git: "https://github.com/RobiMankhin/Fortune-Roll",
+    title: "ClimeScanner",
+    link: "https://climescanner.netlify.app/",
+    git: "https://github.com/RobiMankhin/Clime-Scanner",
   },
   {
     id: 5,
     Image: work5,
-    title: "food",
-    link: "https://fortune-roll.netlify.app/",
-    git: "https://github.com/RobiMankhin/Fortune-Roll",
+    title: "NoteBook4me",
+    link: "https://notebook4me.netlify.app/",
+    git: "https://github.com/RobiMankhin/Note-it/tree/main",
   },
 ];
