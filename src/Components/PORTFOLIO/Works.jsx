@@ -19,14 +19,14 @@ const Works = () => {
         loop={true}
         navigation={true}
         // autoplay={{ delay: 4000 }}
-        className=" mt-4 shadow-2xl border duration-300 hover:scale-105 border-y-gray-400 rounded-md h-[350px] md:h-[480px] lg:h-[500px] w-[340px] md:w-[700px] lg:w-[800px]  "
+        className=" mt-4 shadow-2xl border border-y-gray-400 rounded-md h-[350px] md:h-[480px] lg:h-[500px] w-[340px] md:w-[700px] lg:w-[800px]  "
       >
         {Projects?.map((item) => (
           <SwiperSlide
             key={item.id}
             className="flex mt-4 flex-col items-center  rounded-lg gap-5"
           >
-            <div className=" md:w-[540px] lg:w-[580px] w-[270px]">
+            <div className="duration-300 hover:scale-105 md:w-[540px] lg:w-[580px] w-[270px]">
               <img className="rounded-lg" src={item.Image} alt={item.title} />
             </div>
             <h3 className="text-lg md:text-2xl font-semibold">{item.title}</h3>
